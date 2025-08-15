@@ -1,2 +1,2 @@
-# Speech_Enhancement_Tool
+# Speech Enhancement Tool
 Analytic speech enhancement or removal algorithm
