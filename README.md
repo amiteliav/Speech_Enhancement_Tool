@@ -23,5 +23,5 @@ The algorithm operates in the time–frequency domain using the following main s
 8. Inverse STFT – Reconstructs the time-domain signal.
 
 This design allows both:
-Speech enhancement (keep speech, suppress noise).
-Speech removal (keep noise, suppress speech).
+1. Speech enhancement (keep speech, suppress noise).
+2. Speech removal (keep noise, suppress speech).
