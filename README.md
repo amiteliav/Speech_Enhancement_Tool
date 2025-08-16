@@ -48,7 +48,8 @@ SpeechEnhancementRemovalTool/
 * **`src/SpeechRemovalTool.py`**: Main Python implementation of the speech enhancement / removal algorithm.
 * **`requirements.txt`**: List of Python dependencies needed to run the code.
 * **`README.md`**: Project description and usage instructions (this file).
-Full code and files will be uploaded soon.
+
+The full code and files will be uploaded soon.
 
 ## 4. System Overview
 ![System Overview](docs/Overview.png)
