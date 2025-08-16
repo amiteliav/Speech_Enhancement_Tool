@@ -5,8 +5,8 @@ Analytic speech enhancement or removal algorithm
 # 1. Goal
 This project implements an analytic speech enhancement and removal algorithm.
 It can:
-Enhance speech in noisy audio recordings.
-Remove speech and isolate background noise.
+1. Enhance speech in noisy audio recordings.
+2. Remove speech and isolate background noise.
 
 The tool is based on traditional digital signal processing (DSP) techniques and is suitable for scenarios where explainability and fine control over the algorithm are important.
 
