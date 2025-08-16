@@ -27,13 +27,27 @@ This design allows both:
 2. Speech removal (keep noise, suppress speech).
 
 
-## 3. Repository Structure
-src/                   # Main algorithm
-examples/              # Example input/output audio files
-docs/                  # PDF presentation and documentation
-requirements.txt       # Dependencies
-README.md              # This file
-
+## 3. 📂 Repository Structure
+```bash
+SpeechEnhancementRemovalTool/
+├── docs/
+│   ├── Overview.png
+│   └── speech_enhancement_presentation.pdf
+├── examples/
+│   ├── example_input.wav
+│   ├── example_output_speech.wav
+│   └── example_output_noise.wav
+├── src/
+│   └── SpeechRemovalTool.py
+├── requirements.txt
+└── README.md
+```
+* **`docs/system_overview.png`**: System overview diagram extracted from the presentation, used in the README.
+* **`docs/speech_enhancement_presentation.pdf`**: Presentation slides explaining the algorithm in detail.
+* **`Examples/`: Example input and processed audio files for quick testing.
+* **`src/SpeechRemovalTool.py`**: Main Python implementation of the speech enhancement / removal algorithm.
+* **`requirements.txt`**: List of Python dependencies needed to run the code.
+* **`README.md`**: Project description and usage instructions (this file).
 
 ## 4. System Overview
 ![System Overview](docs/Overview.png)
