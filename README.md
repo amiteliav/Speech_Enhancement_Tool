@@ -13,7 +13,7 @@ The tool is based on traditional digital signal processing (DSP) techniques and 
 
 # 2. Overview of the Solution
 The algorithm operates in the time–frequency domain using the following main steps:
-1. Noise Spectrum Estimation – Estimates the noise profile using histogram-based mode detection.
+1. Noise Estimation – Estimates the noise spectrum profile.
 2. Speech Presence Probability (SPP) Estimation – Calculates the probability that speech is present in each time–frequency bin.
 3. Pitch Tracking (f₀ detection) – Uses cepstrum analysis to detect the fundamental frequency of speech.
 4. Harmonies-based Masking – Detects harmonic structures of speech and creates a mask.
