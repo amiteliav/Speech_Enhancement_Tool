@@ -25,3 +25,11 @@ The algorithm operates in the time–frequency domain using the following main s
 This design allows both:
 1. Speech enhancement (keep speech, suppress noise).
 2. Speech removal (keep noise, suppress speech).
+
+
+3. Repository Structure
+src/                   # Main algorithm
+examples/              # Example input/output audio files
+docs/                  # PDF presentation and documentation
+requirements.txt       # Dependencies
+README.md              # This file
