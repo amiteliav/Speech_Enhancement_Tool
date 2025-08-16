@@ -53,10 +53,9 @@ Computed from smoothed SNR values, scaled between 0 and 1. Forms the basis for d
 Reduces isolated false alarms and yields cleaner speech regions.
 8. Voice Activity Detection (VAD): Frames with low speech probability are excluded from further processing. Prevents artifacts in non-speech regions.
 9. Gain Mask Application: Combines all previous masks into a gain function:
-
-Enhancement Mode: keep speech, suppress noise.
-/tabRemoval Mode: suppress speech, keep noise.
-/tabGain values are applied in the STFT domain.
+- Enhancement Mode: keep speech, suppress noise.
+- Removal Mode: suppress speech, keep noise.
+Gain values are applied in the STFT domain.
 
 11. ISTFT & Output: The masked STFT is converted back to the time domain using ISTFT.
 
