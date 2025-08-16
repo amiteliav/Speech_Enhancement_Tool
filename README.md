@@ -27,7 +27,7 @@ This design allows both:
 2. Speech removal (keep noise, suppress speech).
 
 
-# 3. Repository Structure
+## 3. Repository Structure
 src/                   # Main algorithm
 examples/              # Example input/output audio files
 docs/                  # PDF presentation and documentation
@@ -35,5 +35,5 @@ requirements.txt       # Dependencies
 README.md              # This file
 
 
-# 4. System Overview
+## 4. System Overview
 ![System Overview](docs/Overview.png)
