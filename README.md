@@ -86,6 +86,6 @@ Final result: either cleaned speech or isolated noise.
 
 ## 5. Examples
 ### Example 1
-- **Original (Noisy Speech):** [example_input.wav](examples/Example_1_Noisy.wav)  
-- **Enhanced (Keep Speech, Suppress Noise):** [example_output_speech.wav](Example_1_keep_speech_soft_vad.wav)  
-- **Noise Only (Suppress Speech, Keep Noise):** [example_output_noise.wav](examples/Example_1_keep_noise.wav)  
+| Original (Noisy Speech) | Enhanced (Keep Speech, Suppress Noise) | Noise Only (Suppress Speech, Keep Noise) |
+|--------------------------|----------------------------------------|------------------------------------------|
+| [Example_1_Noisy.wav](examples/Example_1_Noisy.wav) | [Example_1_keep_speech_soft_vad.wav](examples/Example_1_keep_speech_soft_vad.wav) | [Example_1_keep_noise.wav](examples/Example_1_keep_noise.wav) |
