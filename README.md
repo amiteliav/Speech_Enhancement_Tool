@@ -44,7 +44,7 @@ SpeechEnhancementRemovalTool/
 ```
 * **`docs/system_overview.png`**: System overview diagram extracted from the presentation, used in the README.
 * **`docs/speech_enhancement_presentation.pdf`**: Presentation slides explaining the algorithm in detail.
-* **`Examples/`: Example input and processed audio files for quick testing.
+* **`Examples/`**: Example input and processed audio files for quick testing.
 * **`src/SpeechRemovalTool.py`**: Main Python implementation of the speech enhancement / removal algorithm.
 * **`requirements.txt`**: List of Python dependencies needed to run the code.
 * **`README.md`**: Project description and usage instructions (this file).
