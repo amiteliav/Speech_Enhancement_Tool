@@ -86,10 +86,11 @@ Final result: either cleaned speech or isolated noise.
 
 ## 5. Examples
 ### Example 1
-noisy: 
-https://github.com/user-attachments/assets/5de1afcd-e07d-4f6b-b83a-35572bf6d53c
+- [Example 1 – Noisy](examples/Example_1_Noisy.wav)  
+  A short audio recording containing speech mixed with background noise.  
 
+- [Example 1 – keep_speech](examples/Example_1_keep_speech_soft_vad.wav)  
+  The same recording after processing, where the speech is enhanced and most of the noise is suppressed.  
 
-| Original (Noisy Speech) | Enhanced (Keep Speech, Suppress Noise) | Noise Only (Suppress Speech, Keep Noise) |
-|--------------------------|----------------------------------------|------------------------------------------|
-| [Example 1 - Noisy](examples/Example_1_Noisy.mp4) | [Example 1 - keep_speech](examples/Example_1_keep_speech_soft_vad.wav) | [Example 1 - keep_noise](examples/Example_1_keep_noise.mp4) |
+- [Example 1 – keep_noise](examples/Example_1_keep_noise.wav)  
+  The extracted background noise from the original recording, with the speech largely removed.  
