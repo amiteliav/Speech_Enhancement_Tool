@@ -35,23 +35,6 @@ requirements.txt       # Dependencies
 README.md              # This file
 
 
-SpeechEnhancementRemovalTool/
-│
-├── src/ # Main algorithm
-│ └── SpeechRemovalTool.py
-│
-├── examples/ # Example input/output audio files
-│ ├── example_input.wav
-│ ├── example_output_speech.wav
-│ └── example_output_noise.wav
-│
-├── docs/ # PDF presentation and documentation
-│ └── speech_enhancement_presentation.pdf
-│
-├── requirements.txt # Dependencies
-├── README.md # Project description
-└── LICENSE # (Optional)
-
 ## 4. System Overview
 ![System Overview](docs/Overview.png)
 Component Descriptions
