@@ -52,12 +52,11 @@ Computed from smoothed SNR values, scaled between 0 and 1. Forms the basis for d
 7. Hysteresis Thresholding: Refines the SPP + Harmonics mask by enforcing continuity. Weak detections are kept only if connected to strong ones.
 Reduces isolated false alarms and yields cleaner speech regions.
 8. Voice Activity Detection (VAD): Frames with low speech probability are excluded from further processing. Prevents artifacts in non-speech regions.
-9. **Gain Mask Application**  
+9. Gain Mask Application  
    Combines all previous masks into a gain function:
    - **Enhancement Mode:** keep speech, suppress noise.  
    - **Removal Mode:** suppress speech, keep noise.  
    Gain values are applied in the STFT domain.
-
 10. ISTFT & Output: The masked STFT is converted back to the time domain using ISTFT.
 
 
