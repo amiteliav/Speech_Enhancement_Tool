@@ -35,30 +35,54 @@ requirements.txt       # Dependencies
 README.md              # This file
 
 
+SpeechEnhancementRemovalTool/
+│
+├── src/ # Main algorithm
+│ └── SpeechRemovalTool.py
+│
+├── examples/ # Example input/output audio files
+│ ├── example_input.wav
+│ ├── example_output_speech.wav
+│ └── example_output_noise.wav
+│
+├── docs/ # PDF presentation and documentation
+│ └── speech_enhancement_presentation.pdf
+│
+├── requirements.txt # Dependencies
+├── README.md # Project description
+└── LICENSE # (Optional)
+
 ## 4. System Overview
 ![System Overview](docs/Overview.png)
 Component Descriptions
 1. Input & STFT: The input audio is transformed into the time–frequency domain using Short-Time Fourier Transform (STFT).
+
 2. Noise Estimation: For each frequency bin, the algorithm builds a histogram of power values over time.
 The mode (most common value) is selected as the noise floor.
+
 3. A Posteriori & A Priori PSD: 
 A posteriori PSD: ratio of noisy signal power to estimated noise power.
 A priori PSD: a smoothed version of the a posteriori PSD, providing more stable estimates.
 These PSDs are used to evaluate the speech presence probability (SPP).
+
 4. SPP Estimation: The Speech Presence Probability (SPP) indicates how likely it is that speech exists in each time–frequency bin.
 Computed from smoothed SNR values, scaled between 0 and 1. Forms the basis for distinguishing speech from noise.
+
 5. Pitch Tracking (f₀ Detection): The cepstrum peak gives the fundamental frequency (f₀). The f₀ is smoothed over time to ensure robust pitch tracking.
+
 6. Harmonics-Based Masking: Generates harmonic patterns aligned with f₀. Low-frequency bins below f₀/4 are suppressed to avoid false detections.
+
 7. Hysteresis Thresholding: Refines the SPP + Harmonics mask by enforcing continuity. Weak detections are kept only if connected to strong ones.
 Reduces isolated false alarms and yields cleaner speech regions.
+
 8. Voice Activity Detection (VAD): Frames with low speech probability are excluded from further processing. Prevents artifacts in non-speech regions.
+
 9. Gain Mask Application  
    Combines all previous masks into a gain function:
    - **Enhancement Mode:** keep speech, suppress noise.  
    - **Removal Mode:** suppress speech, keep noise.  
    Gain values are applied in the STFT domain.
 10. ISTFT & Output: The masked STFT is converted back to the time domain using ISTFT.
-
 
 Final result: either cleaned speech or isolated noise.
 
