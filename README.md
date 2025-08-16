@@ -2,7 +2,7 @@
 Analytic speech enhancement or removal algorithm
 
 
-# 1. Goal
+## 1. Goal
 This project implements an analytic speech enhancement and removal algorithm.
 It can:
 1. Enhance speech in noisy audio recordings.
