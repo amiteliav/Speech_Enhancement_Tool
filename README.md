@@ -29,7 +29,7 @@ This design allows both:
 
 ## 3. 📂 Repository Structure
 ```bash
-SpeechEnhancementRemovalTool/
+Speech_Enhancement_Tool/
 ├── docs/
 │   ├── Overview.png
 │   └── speech_enhancement_presentation.pdf
